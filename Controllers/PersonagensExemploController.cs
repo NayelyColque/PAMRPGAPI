@@ -116,7 +116,11 @@ namespace RpgApi.Controllers
         [HttpPut]
         public IActionResult UpdatePersonagem(Personagem p)
         {
-            Personagem personagemAlterado = personagens.Find(pers => pers.Id == p.Id);
+            Personagem personagemAlterado = personagens.FirstOrDefault(pers => pers.Id == p.Id);
+
+            if (personagemAlterado == null)
+                return NotFound("Personagem não encontrado para alteração.");
+
             personagemAlterado.Nome = p.Nome;
             personagemAlterado.PontosVida = p.PontosVida;
             personagemAlterado.Forca = p.Forca;

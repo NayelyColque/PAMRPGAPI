@@ -4,7 +4,7 @@ using RpgApi.Data;
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<DataContext>(options =>
 {
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("Connectionlocalhost"));
 });
 
 builder.Services.AddOpenApi();
@@ -36,8 +36,7 @@ app.MapGet("/weatherforecast", () =>
         ))
         .ToArray();
     return forecast;
-})
-.WithName("GetWeatherForecast");
+}).WithName("GetWeatherForecast");
 app.MapControllers();
 app.Run();  
 
