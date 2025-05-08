@@ -31,3 +31,4 @@ C:\Users\User\Documents\RpgApi\obj\Debug\net9.0\refint\RpgApi.dll
 C:\Users\User\Documents\RpgApi\obj\Debug\net9.0\RpgApi.pdb
 C:\Users\User\Documents\RpgApi\obj\Debug\net9.0\RpgApi.genruntimeconfig.cache
 C:\Users\User\Documents\RpgApi\obj\Debug\net9.0\ref\RpgApi.dll
+C:\Users\User\Documents\RpgApi\obj\Debug\net9.0\RpgApi.sourcelink.json
