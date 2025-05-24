@@ -1,0 +1,225 @@
+[
+  {
+    "ContainingType": "RpgApi.Controllers.PersonagensExemploController",
+    "Method": "AddPersonagem",
+    "RelativePath": "PersonagensExemplo",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "novoPersonagem",
+        "Type": "RpgApi.Models.Personagem",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RpgApi.Controllers.PersonagensExemploController",
+    "Method": "UpdatePersonagem",
+    "RelativePath": "PersonagensExemplo",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "p",
+        "Type": "RpgApi.Models.Personagem",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RpgApi.Controllers.PersonagensExemploController",
+    "Method": "GetSingle",
+    "RelativePath": "PersonagensExemplo/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RpgApi.Controllers.PersonagensExemploController",
+    "Method": "Delete",
+    "RelativePath": "PersonagensExemplo/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RpgApi.Controllers.PersonagensExemploController",
+    "Method": "GetById",
+    "RelativePath": "PersonagensExemplo/BuscaPorId/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RpgApi.Controllers.PersonagensExemploController",
+    "Method": "Get",
+    "RelativePath": "PersonagensExemplo/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RpgApi.Controllers.PersonagensExemploController",
+    "Method": "GetByEnum",
+    "RelativePath": "PersonagensExemplo/GetByEnum/{enumId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "enumId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RpgApi.Controllers.PersonagensExemploController",
+    "Method": "GetByForca",
+    "RelativePath": "PersonagensExemplo/GetByForca/{forca}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "forca",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RpgApi.Controllers.PersonagensExemploController",
+    "Method": "GetByInteligencia",
+    "RelativePath": "PersonagensExemplo/GetByInteligencia/{valor}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "valor",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RpgApi.Controllers.PersonagensExemploController",
+    "Method": "GetByNomeAproximado",
+    "RelativePath": "PersonagensExemplo/GetByNomeAproximado/{nome}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "nome",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RpgApi.Controllers.PersonagensExemploController",
+    "Method": "GetQuantidade",
+    "RelativePath": "PersonagensExemplo/GetContagem",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RpgApi.Controllers.PersonagensExemploController",
+    "Method": "GetOrdem",
+    "RelativePath": "PersonagensExemplo/GetOrdenado",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RpgApi.Controllers.PersonagensExemploController",
+    "Method": "GetRemovendoMagos",
+    "RelativePath": "PersonagensExemplo/GetRemovendoMago",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RpgApi.Controllers.PersonagensExemploController",
+    "Method": "GetSemCavaleiro",
+    "RelativePath": "PersonagensExemplo/GetSemCavaleiro",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RpgApi.Controllers.PersonagensExemploController",
+    "Method": "GetSomaForca",
+    "RelativePath": "PersonagensExemplo/GetSomaForca",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Program\u002B\u003C\u003Ec__DisplayClass0_0",
+    "Method": "\u003C\u003CMain\u003E$\u003Eb__1",
+    "RelativePath": "weatherforecast",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "WeatherForecast[]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetWeatherForecast"
+  }
+]

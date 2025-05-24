@@ -55,18 +55,17 @@ namespace RpgApi.Controllers
         {
             try
             {
-                // Validação de pontos de vida
                 if (novoPersonagem.PontosVida > 100)
                 {
-                    return BadRequest(new { message = "Pontos de vida não podem ser maiores que 100." });
+                    throw new Exception ("Pontos de vida não podem ser maiores que 100.");
                 }
 
                 await _context.TB_PERSONAGENS.AddAsync(novoPersonagem);
                 await _context.SaveChangesAsync();  
 
-                return CreatedAtAction(nameof(GetSingle), new { id = novoPersonagem.Id }, novoPersonagem);
+                return Ok(novoPersonagem);
             }
-            catch (Exception ex)
+            catch (System.Exception ex)
             {
                 return BadRequest(ex.Message);
             }
@@ -77,21 +76,15 @@ namespace RpgApi.Controllers
         {
             try
             {
-                // Validação de pontos de vida
                 if (novoPersonagem.PontosVida > 100)
                 {
-                    return BadRequest(new { message = "Pontos de vida não podem ser maiores que 100." });
+                    throw new System.Exception("Pontos de vida não podem ser maiores que 100.");
                 }
 
                 _context.TB_PERSONAGENS.Update(novoPersonagem);
                 int linhasAfetadas = await _context.SaveChangesAsync();
 
-                if (linhasAfetadas == 0)
-                {
-                    return NotFound(new { message = "Personagem não encontrado para atualização." });
-                }
-
-                return Ok(new { message = "Personagem atualizado com sucesso.", linhasAfetadas });
+                return Ok(linhasAfetadas);
             }
             catch (Exception ex)
             {
@@ -104,20 +97,14 @@ namespace RpgApi.Controllers
         {
             try
             {
-                // Usando o método FindAsync corretamente
-                Personagem pRemover = await _context.TB_PERSONAGENS.FindAsync(id);
-
-                if (pRemover == null)
-                {
-                    return NotFound(new { message = "Personagem não encontrado para remoção." });
-                }
+                Personagem pRemover = await _context.TB_PERSONAGENS.FirstOrDefaultAsync(p => p.Id == id);
 
                 _context.TB_PERSONAGENS.Remove(pRemover);
                 int linhasAfetadas = await _context.SaveChangesAsync();
 
                 return Ok(new { message = "Personagem removido com sucesso.", linhasAfetadas });
             }
-            catch(Exception ex)
+            catch(System.Exception ex)
             {
                 return BadRequest(ex.Message);
             }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Documents\\RpgApi\\RpgApi.csproj": {}
+    "C:\\Users\\User\\Documents\\PAM\\RpgApi\\RpgApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Documents\\RpgApi\\RpgApi.csproj": {
+    "C:\\Users\\User\\Documents\\PAM\\RpgApi\\RpgApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Documents\\RpgApi\\RpgApi.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Documents\\PAM\\RpgApi\\RpgApi.csproj",
         "projectName": "RpgApi",
-        "projectPath": "C:\\Users\\User\\Documents\\RpgApi\\RpgApi.csproj",
+        "projectPath": "C:\\Users\\User\\Documents\\PAM\\RpgApi\\RpgApi.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Documents\\RpgApi\\obj\\",
+        "outputPath": "C:\\Users\\User\\Documents\\PAM\\RpgApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -64,6 +64,10 @@
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[9.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[9.0.5, )"
             }
           },
           "imports": [
